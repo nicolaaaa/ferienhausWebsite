@@ -1,0 +1,531 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Abril Fatface', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/*section a img {*/
+/*  width: 200px; !* Adjust as needed *!*/
+/*  height: 100%; !* Adjust as needed *!*/
+/*  object-fit: cover; !* This will ensure that your images cover the whole space without distortion *!*/
+/*}*/
+
+/*.gallery {*/
+/*  display: flex;*/
+/*  flex-wrap: wrap;*/
+/*  justify-content: space-around;*/
+/*}*/
+
+/*.gallery img {*/
+/*  width: 100%;*/
+/*  height: 200px;*/
+/*  margin: 10px;*/
+/*}*/
+/*.calendar-size {*/
+/*  width: 100%; !* Adjust as needed *!*/
+/*  height: 50%; !* Adjust as needed *!*/
+/*  margin: 0 auto; !* Center the calendar *!*/
+/*}*/
+
+.contact-container {
+  background-color: #798887; /* Change this to your preferred color */
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.contact-container p {
+  background-color: white;
+  padding-left: 5px;
+}
+
+
+.navbar {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #39977c; /* You can change this to your preferred color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 1000;  /* This ensures the navbar stays on top of other elements */
+}
+
+.navbar button {
+  position: static;
+  display: block;
+  margin: 10px; /* Add space around each button */
+  padding: 10px 20px;
+  background-color: #39977c; /* You can change this to your preferred color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.navbar button a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .navbar button {
+    font-size: 12px; /* Adjust as needed */
+    padding: 5px 10px; /* Adjust as needed */
+  }
+
+  /*.navbar button::before {*/
+  /*  content: "\f0c9"; !* This is the unicode for the 'bars' icon in Font Awesome *!*/
+  /*  font-family: "Font Awesome 5 Free"; !* This is the font family for Font Awesome *!*/
+  /*  padding-right: 5px; !* Adds some space between the icon and the text *!*/
+  /*}*/
+}
+
+/* Lightbox */
+.lb-image {
+  padding: 1px;
+}
+
+.floating-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #39977c; /* You can change this to your preferred color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 1000; /* This ensures the button stays on top of other elements */
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 10px;
+}
+
+.image-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+  pointer-events: none;
+}
+
+.container {
+  width: 80%;
+  max-width: 1280px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+ul.links{
+  display: flex;
+  flex-direction: row;
+  /*justify-content: space-between;*/
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+
+.property-details, .calendar, .map, .reviews {
+  margin-top: 20px;
+}
+
+.property-details h2, .calendar h2, .map h2, .reviews h2 {
+  margin-top: 0;
+  font-weight: 700;
+}
+
+.property-details p, .calendar p, .map p, .reviews p {
+  margin: 5px 0;
+}
+
+.amenities {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.amenities li {
+  background: #e0e0e0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.calendar input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.map iframe {
+  width: 100%;
+  height: 400px;
+  border: 0;
+  border-radius: 8px;
+}
+
+.reviews .review {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 0;
+}
+
+.reviews .review:last-child {
+  border-bottom: none;
+}
+
+.reviews .review p {
+  margin: 5px 0;
+}
+
+.reviews .review strong {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    margin-top: 10px;
+  }
+
+  .image-gallery {
+    flex-direction: column;
+  }
+
+  .main-image, .thumbnail {
+    flex: unset;
+  }
+}
+
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+    font-size: 14px; /* Adjust as needed */
+    overflow: auto; /* This will ensure the elements stay within the container */
+
+}
+.grid-item {
+  display: flex;
+  align-items: center;
+  margin-right: 1px; /* Adjust as needed */
+}
+.grid-item i {
+  /*width: 24px;*/
+  /*height: 24px;*/
+  margin-right: 10px;
+}
+
+/***************
+* MEDIA QUERIES
+***************/
+@media screen and (min-width: 768px) {
+
+  main {
+    width: 90%;
+    justify-content: space-between;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  main {
+    width: 70%;
+    justify-content: space-between;
+  }
+
+}
+
+/*.desktop_2 * {*/
+/*  font-family: Nunito, sans-serif;*/
+/*  margin-top: 0px;*/
+/*  margin-right: 0px;*/
+/*  margin-bottom: 0px;*/
+/*  margin-left: 0px;*/
+/*}*/
+
+button {
+  cursor: pointer;
+}
+
+img {
+  cursor: pointer;
+}
+
+img:hover {
+  transform: scale(1.02);
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  transition-property: all;
+}
+
+.desktop_2 .Container {
+  width: 1000px;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-left: auto;
+}
+
+.desktop_2 .portfolio {
+  background-image: initial;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+
+.desktop_2 .bigImg {
+  width: 665px;
+  height: 445px;
+  margin-top: 0px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  object-fit: cover;
+}
+
+.desktop_2 .bigImg2 {
+  width: 565px;
+  height: 445px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  object-fit: cover;
+}
+
+.desktop_2 .side2 {
+  width: 400px;
+}
+
+.desktop_2 .project-image {
+  height: 215px;
+  width: 100%;
+  margin-top: 0px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  object-fit: cover;
+}
+
+
+.desktop_2 .above {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.desktop_2 .bottom {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*@media (max-width: 1024px) {*/
+/*  .desktop_2 .project-image {*/
+/*    width: 165px;*/
+/*    height: 100%;*/
+/*  }*/
+
+/*  .desktop_2 .Container {*/
+/*    width: 690px;*/
+/*    margin-top: 80px;*/
+/*    margin-right: auto;*/
+/*    margin-bottom: 50px;*/
+/*    margin-left: auto;*/
+/*  }*/
+
+/*  .desktop_2 .bigImg {*/
+/*    width: 515px;*/
+/*    height: 340px;*/
+/*  }*/
+/*}*/
+
+@media (max-width: 768px) {
+  .desktop_2 .project {
+    width: 220px;
+    display: inline-block;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+
+  .desktop_2 .project-first {
+    width: 450px;
+  }
+
+  .desktop_2 .above {
+    flex-direction: column;
+  }
+
+  .desktop_2 .portfolio {
+    justify-content: flex-start;
+  }
+
+  .desktop_2 .Container {
+    width: 450px;
+  }
+
+  .desktop_2 .bigImg {
+    width: 450px;
+  }
+
+  .desktop_2 .bigImg2 {
+    width: 450px;
+  }
+
+  .desktop_2 .project-image {
+    width: 220px;
+    height: 200px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    display: inline-block;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    object-fit: cover;
+  }
+
+  .desktop_2 .side {
+    display: flex;
+    width: 450px;
+    justify-content: space-between;
+  }
+
+  .desktop_2 .side2 {
+    display: flex;
+    width: 450px;
+    justify-content: space-between;
+  }
+
+  .desktop_2 .bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .desktop_2 .bigImg {
+    width: 250px;
+    height: 200px;
+  }
+
+  .desktop_2 .bigImg2 {
+    width: 250px;
+    height: 200px;
+  }
+
+  .desktop_2 .project {
+    width: 110px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+
+  .desktop_2 .Container {
+    width: 250px;
+    margin-top: 80px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+  }
+
+  .desktop_2 .project-image {
+    width: 110px;
+    height: 110px;
+  }
+
+  .desktop_2 .side {
+    flex-direction: row;
+    width: 250px;
+  }
+
+  .desktop_2 .side2 {
+    flex-direction: row;
+    width: 250px;
+  }
+
+  .desktop_2 .project-first {
+    width: 250px;
+  }
+
+
+
+}
