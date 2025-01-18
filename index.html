@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,427 +9,632 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
     <title>Sulingen Ferienwohnung</title>
     <meta name="title" content="Sulingen Ferienwohnung">
-    <meta name="description" content="Gemütliche Ferienwohnung in Sulingen bietet Platz für bis zu 4 Gäste. 2 Schlafzimmer, Wohnzimmer, Küche und Bad. 2 Balkone. Zentral gelegen.">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta name="description"
+        content="Gemütliche Ferienwohnung in Sulingen bietet Platz für bis zu 4 Gäste. 2 Schlafzimmer, Wohnzimmer, Küche und Bad. 2 Balkone. Zentral gelegen. Auch einzelne Zimmer buchbar. ferienwohnung. ferienapartment. holidayapartment">
 
-
+    <link rel=”canonical” href=”https://schulze-sulingen.de” />
 
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" />
+
     <!-- Fallback in case CDN fails -->
     <link rel="stylesheet" href="js/lightbox/lightbox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css"
-          integrity="sha256-auPoJwk/+RK6KSkib92Dkq1Y5hEkZvKtvSwucs15Skg=" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+        integrity="sha256-auPoJwk/+RK6KSkib92Dkq1Y5hEkZvKtvSwucs15Skg=" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.3/main.min.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.3/main.min.css" rel="stylesheet"> -->
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+<!-- 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-          integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> -->
 
-    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.13/index.global.min.js'></script>
+    <!-- <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.13/index.global.min.js'></script> -->
 </head>
+
 <body>
 
-<div class="navbar">
-    <button><a href="#kontakt">Kontakt</a></button>
-    <!--<button><a href="#details">Details zur Wohnung</a></button>-->
-    <!--<button><a href="#availabilitz">Availability</a></button>-->
-</div>
+    <div class="navbar">
+        <button><a href="#kontakt" data-i18n="contact_nav">Kontakt</a></button>
+        <!--<button><a href="#details">Details zur Wohnung</a></button>-->
+        <!--<button><a href="#availabilitz">Availability</a></button>-->
+    </div>
 
-<div class="container">
+    <div class="language-selector">
+        <i class="fi fi-us language-icon" onclick="selectLanguage('en')" title="English"></i>
+        <i class="fi fi-de language-icon" onclick="selectLanguage('de')" title="Deutsch"></i>
+    </div>
 
-    <!--    <div id="image-grid" class="image-grid"></div>-->
+    <!-- <div class="container gray">
+    <div class="title">
+        <h1 data-i18n="main_header" class="main_header">Ferienwohnung Schulze in Sulingen</h1>
+    </div>
+    </div> -->
 
-    <div class="desktop_2" unique-script-id="w-w-dm-id">
-        <div class="Container">
-            <h1>Ferienwohnung in Sulingen</h1>
-            <br>
-            <div class="portfolio">
-                <div class="above">
-                    <div class="project project-first">
-                        <a href="images/astro_main.jpg" data-lightbox="gallery"
-                           data-alt="Astro room main">
-                            <img src="images/astro_main.jpg" class="bigImg image-block" alt="Astro room main">
-                        </a>
+
+    <div class="container white">
+
+        <!--    <div id="image-grid" class="image-grid"></div>-->
+
+        <div class="desktop_2" unique-script-id="w-w-dm-id">
+            <div class="Container">
+                <!-- <h1 data-i18n="main_header" class="main_header">Ferienwohnung Schulze in Sulingen</h1>
+                <br> -->
+                <h1 data-i18n="main_header" class="main_header">Ferienwohnung Schulze in Sulingen</h1>
+
+                <div class="portfolio">
+                    <div class="above">
+                        <div class="project project-first">
+                            <a href="images/astro_main.jpg" data-lightbox="gallery" data-alt="Astro room main">
+                                <img src="images/astro_main.jpg" class="bigImg image-block" alt="Astro room main">
+                            </a>
+                        </div>
+                        <div class="side">
+
+                            <div class="project">
+                                <a href="images/Balkon3.jpg" data-lightbox="gallery" data-title="" data-alt="Fall">
+                                    <img src="images/Balkon3.jpg" class="project-image " alt="Fall">
+                                </a>
+                            </div>
+                            <div class="project">
+                                <a href="images/console.jpg" data-lightbox="gallery" data-title="S" data-alt="Sunset">
+                                    <img src="images/console.jpg" class="project-image" alt="Sunset">
+                                </a>
+                            </div>
+
+                        </div>
                     </div>
-                    <div class="side">
-
+                    <div class="bottom">
                         <div class="project">
-                            <a href="images/Balkon3.jpg" data-lightbox="gallery"
-                               data-title="" data-alt="Fall">
-                                <img src="images/Balkon3.jpg" class="project-image " alt="Fall">
+                            <a href="images/Wohnzimmer.jpg" data-lightbox="gallery" data-title="" data-alt="Plantation">
+                                <img src="images/Wohnzimmer.jpg" class="project-image" alt="Plantation">
                             </a>
                         </div>
                         <div class="project">
-                            <a href="images/console.jpg" data-lightbox="gallery"
-                               data-title="S" data-alt="Sunset">
-                                <img src="images/console.jpg" class="project-image" alt="Sunset">
+
+                            <a href="images/Balkon2.jpg" data-lightbox="gallery" data-title="" data-alt="Beach">
+                                <img src="images/Balkon2.jpg" class="project-image" alt="Beach">
                             </a>
                         </div>
-
                     </div>
+
+                    <div class="above">
+                        <div class="side2">
+                            <div class="project">
+                                <a href="images/bed_astro.jpeg" data-lightbox="gallery" data-title="" data-alt="Fall">
+                                    <img src="images/bed_astro.jpeg" class="project-image " alt="Fall">
+                                </a>
+                            </div>
+                            <div class="project">
+                                <a href="images/Bad.jpg" data-lightbox="gallery" data-alt="Plantation">
+                                    <img src="images/Bad.jpg" alt="Plantation" class="project-image ">
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="project project-first">
+                            <a href="images/bamboo_main.jpg" data-lightbox="gallery" data-alt="Lake">
+                                <img src="images/bamboo_main.jpg" alt="Lake" class="mage-block bigImg2">
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="bottom">
-                    <div class="project">
-                        <a href="images/Wohnzimmer.jpg" data-lightbox="gallery"
-                           data-title="" data-alt="Plantation">
-                            <img src="images/Wohnzimmer.jpg" class="project-image" alt="Plantation">
-                        </a>
-                    </div>
-                    <div class="project">
-
-                        <a href="images/Balkon2.jpg" data-lightbox="gallery"
-                           data-title="" data-alt="Beach">
-                            <img src="images/Balkon2.jpg" class="project-image" alt="Beach">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="above">
-                    <div class="side2">
-                        <div class="project">
-                            <a href="images/bed_astro.jpeg" data-lightbox="gallery"
-                               data-title="" data-alt="Fall">
-                                <img src="images/bed_astro.jpeg" class="project-image " alt="Fall">
-                            </a>
-                        </div>
-                        <div class="project">
-                            <a href="images/Bad.jpg" data-lightbox="gallery" data-alt="Plantation">
-                                <img src="images/Bad.jpg" alt="Plantation" class="project-image ">
-                            </a>
-                        </div>
-
-                    </div>
-                    <div class="project project-first">
-                        <a href="images/bamboo_main.jpg" data-lightbox="gallery"
-                           data-alt="Lake">
-                            <img src="images/bamboo_main.jpg" alt="Lake" class="mage-block bigImg2">
-                        </a>
-                    </div>
-                </div>
-
             </div>
         </div>
-    </div>
+
+        <!-- <div class="contact-container"> -->
+        <!-- Property Details -->
+        <div class="property-details" id="details">
+            <h2 data-i18n="details_header">Ferienwohnung / Zimmer in Sulingen</h2>
+            <p data-i18n="details_text">Ferienwohnung für bis zu 4 Gäste · 2 Schlafzimmer · Badezimmer · Wohnzimmer ·
+                Küche </p>
+        </div>
+        <!-- </div> -->
+
+        <div class="section">
+            <h2 data-i18n="description_header">Inseratsbeschreibung</h2>
+            <p data-i18n="description_text">Von dieser zentral gelegenen Unterkunft aus seid ihr in Nullkommanichts an
+                allen wichtigen Orten. Alles ist zu Fuß zu erreichen.</p>
+        </div>
+        <div class="contact-container">
+
+            <div class="section">
+                <h2 data-i18n="apartment_header">Deine Unterkunft</h2>
+                <p data-i18n="apartment_text">Die Wohnung besteht aus 3 Schlafzimmern, Wohnzimmer, Küche und Bad. 2
+                    Schlafzimmer sind flexibel buchbar.
+                    3 Zimmer ist für private Zwecke reserviert. Alle Zimmer befinden sich im 1. Stock und verfügen über
+                    eine
+                    Terrassentür auf die Balkone. Vor allen Fenstern und Türen sind Fliegengitter, die auch nachts die
+                    Mücken
+                    fern halten. Die Küche ist voll eingerichtet und bietet viel Platz auch zum Essen und Sitzen. Die
+                    beiden
+                    Schlafzimmer haben jeweils ein Doppelbett, Schreibtisch und TV mit Sat und Fire Stick. Prime und
+                    Disney+
+                    können mit benutzt werden. </p>
+                <p data-i18n="booking_choices">Diese Möglichkeiten sind buchbar:</p>
+                <ul>
+                    <li data-i18n="booking_single">
+                        1 DZ mit gemeinsamer Nutzung Bad , Wohnzimmer, Küche und Balkone
+                    </li>
+                    <li data-i18n="booking_all">
+                        1 oder 2 DZ mit alleiniger Nutzung aller anderen Räume.
+                    </li>
+                </ul>
+            </div>
+        </div>
 
 
-    <!-- Property Details -->
-    <div class="property-details" id="details">
-        <h2>Ferienwohnung / Zimmer in Sulingen</h2>
-        <p>Ferienwohnung für bis zu 4 Gäste · 2 Schlafzimmer · Badezimmer · Wohnzimmer · Küche </p>
-    </div>
 
-    <div class="section">
-        <h2>Inseratsbeschreibung</h2>
-        <p> Von dieser zentral gelegenen Unterkunft aus seid ihr in Nullkommanichts an allen wichtigen Orten. Alles ist
-            zu Fuß zu erreichen.</p>
-    </div>
-
-    <!-- Deine Unterkunft -->
-    <div class="section">
-        <h2>Deine Unterkunft</h2>
-        <p>Die Wohnung besteht aus 3 Schlafzimmern, Wohnzimmer, Küche und Bad. 2 Schlafzimmer sind flexibel buchbar. Das
-            3 Zimmer ist für private Zwecke reserviert. Alle Zimmer befinden sich im 1. Stock und verfügen über eine
-            Terrassentür auf die Balkone. Vor allen Fenstern und Türen sind Fliegengitter, die auch nachts die Mücken
-            fern halten. Die Küche ist voll eingerichtet und bietet viel Platz auch zum Essen und Sitzen. Die beiden
-            Schlafzimmer haben jeweils ein Doppelbett, Schreibtisch und TV mit Sat und Fire Stick. Prime und Disney+
-            können mit benutzt werden. </p>
-        <p>Diese Möglichkeiten sind buchbar:</p>
-        <ul>
-            <li>
-                1 DZ mit gemeinsamer Nutzung Bad , Wohnzimmer, Küche und Balkone
-            </li>
-            <li>
-                1 oder 2 DZ mit alleiniger Nutzung aller anderen Räume.
-            </li>
-        </ul>
-    </div>
-
-
-    <!-- Interaktion mit Gästen -->
-    <div class="section">
-        <h2>Interaktion mit Gästen</h2>
-        <p> Die Wohnung/ Zimmer ist auch über Airbnb buchbar</p>
+        <!-- Interaktion mit Gästen -->
+        <div class="section">
+            <h2 data-i18n="interaction_header"> Auch über Airbnb buchbar</h2>
             <ul class="links">
                 <li>
-                    <div class="airbnb-embed-frame" data-id="1131067349074802839" data-view="home" data-hide-price="true" style="width: 450px; height: 300px; margin: auto;"><a href="https://www.airbnb.de/rooms/1131067349074802839?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget">Auf Airbnb ansehen</a><a href="https://www.airbnb.de/rooms/1131067349074802839?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget" rel="nofollow">Apartment · Sulingen · ★Neu · 1 Schlafzimmer · 1 Bett · 1 Gemeinschafts-Badezimmer</a><script async="" src="https://www.airbnb.de/embeddable/airbnb_jssdk"></script></div>
+                    <div class="airbnb-embed-frame" data-id="1131067349074802839" data-view="home"
+                        data-hide-price="true" style="width: 450px; height: 300px; margin: auto;"><a
+                            href="https://www.airbnb.de/rooms/1131067349074802839?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget">Auf
+                            Airbnb ansehen</a><a
+                            href="https://www.airbnb.de/rooms/1131067349074802839?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget"
+                            rel="nofollow">Apartment · Sulingen · ★Neu · 1 Schlafzimmer · 1 Bett · 1
+                            Gemeinschafts-Badezimmer</a>
+                        <script async="" src="https://www.airbnb.de/embeddable/airbnb_jssdk"></script>
+                    </div>
                 </li>
                 <li>
-                    <div class="airbnb-embed-frame" data-id="1142531347281050607" data-view="home" data-hide-price="true" style="width: 450px; height: 300px; margin: auto;"><a href="https://www.airbnb.de/rooms/1142531347281050607?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget">Auf Airbnb ansehen</a><a href="https://www.airbnb.de/rooms/1142531347281050607?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget" rel="nofollow">Apartment · Sulingen · ★Neu · 2 Schlafzimmer · 2 Betten · 1 Badezimmer</a><script async="" src="https://www.airbnb.de/embeddable/airbnb_jssdk"></script></div>
+                    <div class="airbnb-embed-frame" data-id="1142531347281050607" data-view="home"
+                        data-hide-price="true" style="width: 450px; height: 300px; margin: auto;"><a
+                            href="https://www.airbnb.de/rooms/1142531347281050607?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget">Auf
+                            Airbnb ansehen</a><a
+                            href="https://www.airbnb.de/rooms/1142531347281050607?guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget"
+                            rel="nofollow">Apartment · Sulingen · ★Neu · 2 Schlafzimmer · 2 Betten · 1 Badezimmer</a>
+                        <script async="" src="https://www.airbnb.de/embeddable/airbnb_jssdk"></script>
+                    </div>
                 </li>
-    </ul>
-            <p>
-            Meldet euch telefonisch oder per Mail. Wir sind für alle Fragen offen.
-        </p>
-    </div>
-
-    <div class="section">
-        <h2>Preise</h2>
-        <ul>
-            <li>
-                Übernachtung 40 – 80€
-            </li>
-            <li>
-                Endreinigung 25 – 35 € incl. Wäschepaket
-            </li>
-        </ul>
-    </div>
-
-    <!-- Deine Unterkunft -->
-    <div class="contact-container">
-
-        <div class="section" id="kontakt">
-            <h2>Kontakt</h2>
-            <p> Mobil: 0177 577 2805</p>
-            <p> E-mail: Kris-sulingen@t-online.de</p>
+            </ul>
         </div>
-    </div>
 
-    <!--    <div class="section" id="availabilitz">-->
-    <!--        <h2>Check Availability</h2>-->
-    <!--        <div id="calendar" class="calendar-size"></div>-->
-    <!--    </div>-->
+        <div class="section">
+            <h2 data-i18n="price_header">Preise</h2>
+            <ul>
+                <li data-i18n="price_room">
+                    Übernachtung 40 – 80€
+                </li>
+                <li data-i18n="price_extra">
+                    Endreinigung 25 – 35 € incl. Wäschepaket
+                </li>
+            </ul>
+        </div>
 
-    <div class="section" id="ausstattung">
-        <h2>Ausstattung</h2>
-        <ul class="grid-container">
-            <li class="grid-item">
-                <i class="fas fa-blinds"></i>
-                <span>Abdunklung</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-briefcase"></i>
-                <span>Arbeitsplatz</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-tshirt"></i>
-                <span>Aufbewahrung von Kleidung</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-baby"></i>
-                <span>Baby-Sicherheitsgitter</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-cookie-bite"></i>
-                <span>Backblech</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-bed"></i>
-                <span>Bettwäsche</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-book"></i>
-                <span>Bücher und Lesematerial</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-iron"></i>
-                <span>Bügeleisen</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-shower"></i>
-                <span>Duschgel</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-first-aid"></i>
-                <span>Erste-Hilfe-Set</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-utensils"></i>
-                <span>Essbereich im Freien</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-utensils"></i>
-                <span>Esstisch</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-parking"></i>
-                <span>5 Parkplätze</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-pillow"></i>
-                <span>Extrakissen und -decken</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-fire-extinguisher"></i>
-                <span>Feuerlöscher</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-wind"></i>
-                <span>Föhn</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-snowflake"></i>
-                <span>Gefrierschrank</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-luggage-cart"></i>
-                <span>Gepäck kann abgestellt werden</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-utensils"></i>
-                <span>Geschirr und Besteck</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-dumpster"></i>
-                <span>Geschirrspülmaschine</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-cooking"></i>
-                <span>Grundausstattung zum Kochen</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-thermometer-three-quarters"></i>
-                <span>Heizung</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-stove"></i>
-                <span>Herd</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-chair"></i>
-                <span>Hochstuhl</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-coffee"></i>
-                <span>Kaffee</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-coffee"></i>
-                <span>Kaffeemaschine</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-tshirt"></i>
-                <span>Kleiderbügel</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-parking"></i>
-                <span>Kostenloser Parkplatz auf dem Grundstück</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-utensils"></i>
-                <span>Küche</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-ice-cream"></i>
-                <span>Kühlschrank</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-microphone"></i>
-                <span>Mikrowelle</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-blender"></i>
-                <span>Mixer</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-oven"></i>
-                <span>Ofen</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-bell"></i>
-                <span>Rauchmelder</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-baby"></i>
-                <span>Reisebett für Kinder</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-soap"></i>
-                <span>Seife oder Duschgel</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-volume-up"></i>
-                <span>Soundsystem</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-gamepad"></i>
-                <span>Spielkonsole: Nintendo Wii</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-door-open"></i>
-                <span>Terrasse oder Balkon</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-toaster"></i>
-                <span>Toaster</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-tv"></i>
-                <span> TV</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-hot-tub"></i>
-                <span> Warmwasser</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-kettle"></i>
-                <span> Wasserkocher</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-wine-glass-alt"></i>
-                <span> Weingläser</span>
-            </li>
-            <li class="grid-item">
-                <i class="fas fa-wifi"></i>
-                <span> WLAN</span>
-            </li>
 
-            </li>
-        </ul>
-    </div>
-    <!-- Map -->
-    <div class="map">
-        <h2>Location</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2418.9134967794575!2d8.805173057126288!3d52.67959985269883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b0b8d44001e995%3A0xd09d9ab56254cfc!2sSch%C3%BCtzenstra%C3%9Fe%2042%2C%2027232%20Sulingen!5e0!3m2!1sde!2sde!4v1716732143777!5m2!1sde!2sde"
+        <div class="contact-container">
+
+            <div class="section" id="kontakt">
+                <h2 data-i18n="contact_header">Kontakt</h2>
+                <p data-i18n="contact_text">
+                    Meldet euch telefonisch oder per Mail. Wir sind für alle Fragen offen.
+                </p>
+                <button><strong><a href="tel:+49 177 577 2805"><i class="fa-solid fa-phone"></i>  +49 177 577 2805</a></strong></button>
+                <button style="background-color: rgb(39, 72, 122);"><strong><a href="mailto:  Kris-sulingen@t-online.de"><i class="fa-solid fa-envelope"></i>  Kris-sulingen@t-online.de</a></strong></button>
+                <button style="background-color: #25d366;"><strong><a href="https://wa.me/491775772805"><i class="fa-brands fa-whatsapp fa-lg"></i>
+                      Message us on Whatsapp</a></strong></button>
+            </div>
+        </div>
+
+        <!--    <div class="section" id="availabilitz">-->
+        <!--        <h2>Check Availability</h2>-->
+        <!--        <div id="calendar" class="calendar-size"></div>-->
+        <!--    </div>-->
+
+        <div class="section" id="ausstattung">
+            <h2 data-i18n="equitment_header">Ausstattung</h2>
+            <ul class="grid-container">
+                <div class="category">
+                    <li class="grid-item">
+                        <i class="fas fa-moon"></i>
+                        <span data-i18n="moon">Abdunklung der Fenster</span>
+                    </li>
+                    <li class="grid-item">
+                        <i class="fas fa-bed"></i>
+                        <span data-i18n="bed">Bettwäsche</span>
+                    </li>
+                    <li class="grid-item">
+                        <i class="fas fa-bed"></i>
+                        <span data-i18n="pillow">Extrakissen und -decken</span>
+                    </li>
+                    <li class="grid-item">
+                        <i class="fas fa-tshirt"></i>
+                        <span data-i18n="clothes">Aufbewahrung von Kleidung</span>
+                    </li>
+                    <li class="grid-item">
+                        <i class="fas fa-tshirt"></i>
+                        <span data-i18n="iron">Bügeleisen</span>
+                    </li>
+                    <li class="grid-item">
+                        <i class="fas fa-thermometer-three-quarters"></i>
+                        <span data-i18n="heater">Heizung</span>
+                    </li>
+
+                    <li class="grid-item">
+                        <i class="fas fa-tv"></i>
+                        <span data-i18n="tv">TV</span>
+                    </li>
+                    <li class="grid-item">
+                        <i class="fas fa-wind"></i>
+                        <span data-i18n="hair">Föhn</span>
+                    </li>
+                </div>
+
+                <div class="category">
+                    <li class="grid-item">
+                        <i class="fas fa-utensils"></i>
+                        <span data-i18n="cooking">Grundausstattung zum Kochen</span>
+                    </li>
+                    <li class="grid-item">
+                        <i class="fas fa-ice-cream"></i>
+                        <span data-i18n="fridge">Kühlschrank</span>
+                    </li>
+                    <li class="grid-item">
+                        <i class="fas fa-dumpster"></i>
+                        <span data-i18n="dishwasher">Geschirrspülmaschine</span>
+
+                    <li class="grid-item">
+                        <i class="fas fa-utensils"></i>
+                        <span data-i18n="stove">Herd</span>
+                    </li>
+                    <li class="grid-item">
+                        <i class="fas fa-coffee"></i>
+                        <span data-i18n="coffee">Kaffeemaschine</span>
+                    </li>
+                    <li class="grid-item">
+                        <i class="fas fa-utensils"></i>
+                        <span data-i18n="microwave">Mikrowelle</span>
+                    </li>
+                    <li class="grid-item">
+                        <i class="fas fa-utensils"></i>
+                        <span data-i18n="oven">Ofen</span>
+                    </li>
+                    <li class="grid-item">
+                        <i class="fa-solid fa-jug-detergent"></i>
+                        <span data-i18n="laundry">Waschmaschine</span>
+                    </li>
+
+                </div>
+
+                <div class="category">
+
+                    <li class="grid-item">
+                        <i class="fas fa-utensils"></i>
+                        <span data-i18n="toaster">Toaster</span>
+                    </li>
+                    <li class="grid-item">
+                        <i class="fas fa-coffee"></i>
+                        <span data-i18n="kettle">Wasserkocher</span>
+                    </li>
+                    <li class="grid-item">
+                        <i class="fas fa-wine-glass-alt"></i>
+                        <span data-i18n="wine_glasses">Weingläser</span>
+                    </li>
+                    <li class="grid-item">
+                        <i class="fas fa-gamepad"></i>
+                        <span data-i18n="gaming">Spielkonsole: Nintendo Wii</span>
+                    </li>
+
+                    <li class="grid-item">
+                        <i class="fas fa-baby"></i>
+                        <span data-i18n="baby">Baby-Sicherheitsgitter</span>
+                    </li>
+                    <li class="grid-item">
+                        <i class="fas fa-baby"></i>
+                        <span data-i18n="chair">Hochstuhl</span>
+                    </li>
+                    <li class="grid-item">
+                        <i class="fas fa-baby"></i>
+                        <span data-i18n="kids_bed">Reisebett für Kinder</span>
+                    </li>
+                </div>
+
+                <div class="category">
+                    <li class="grid-item">
+                        <i class="fas fa-first-aid"></i>
+                        <span data-i18n="aid">Erste-Hilfe-Set</span>
+                    </li>
+                    <li class="grid-item">
+                        <i class="fas fa-fire-extinguisher"></i>
+                        <span data-i18n="fire">Feuerlöscher</span>
+                    </li>
+                    <li class="grid-item">
+                        <i class="fas fa-bell"></i>
+                        <span data-i18n="fire_alarm">Rauchmelder</span>
+                    </li>
+
+                    <li class="grid-item">
+                        <i class="fas fa-utensils"></i>
+                        <span data-i18n="table_out">Essbereich im Freien</span>
+                    </li>
+                    <li class="grid-item">
+                        <i class="fas fa-door-open"></i>
+                        <span data-i18n="balcony">Terrasse oder Balkon</span>
+                    </li>
+                    <li class="grid-item">
+                        <i class="fas fa-parking"></i>
+                        <span data-i18n="parking">5 Parkplätze</span>
+                    </li>
+                    <li class="grid-item">
+                        <i class="fas fa-book"></i>
+                        <span data-i18n="book">Bücher und Lesematerial</span>
+                    </li>
+                </div>
+
+
+
+            </ul>
+
+        </div>
+
+
+
+        <div class="contact-container">
+
+
+            <div class="section" id="reviews">
+                <h2>Reviews</h2>
+
+                <div class="reviews-container">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <!-- Airbnb Review 1 -->
+                            <div class="swiper-slide review-item">
+
+                                    <div class="review">
+                                        <a href="https://www.airbnb.de/rooms/1131067349074802839/reviews?source_impression_id=p3_1728228387_P3EY0u2obZPS7xc2&scroll_to_review=1249952501536303853"
+                                        target="_blank" class="review-link">
+                                        <h4>Guido (September 2024)</h4>
+                                        <p class="review-text">"Tolle Unterkunft, vollständig ausgestattet und mit liebevollen Details (von
+                                            Proben des örtlichen Kaffeeröster, über Milch im Kühlschrank dazu bis hin zu
+                                            einer Wii mit verschiedenen Spielen). Auf jeden Fall empfehlenswert."</p>
+                                        <span>⭐⭐⭐⭐⭐</span>
+                                    </a>
+
+                                        <button class="more-btn" onclick="showMore(this)">More</button>
+
+                                    </div>
+                            </div>
+
+                            <!-- Google Review 1 -->
+                            <div class="swiper-slide review-item">
+                                    <div class="review">
+                                        <a href="https://www.airbnb.de/rooms/1142531347281050607/reviews?source_impression_id=p3_1728228916_P3LK0AW95JE51-W6&scroll_to_review=1160814439790145348"
+                                        target="_blank" class="review-link">
+                                        <h4>Henning (September 2024)</h4>
+                                        <p class="review-text">"Kristine ist super nett und hat den Aufenthalt sehr entspannt gemacht. Gern
+                                            wieder!"</p>
+                                        <span>⭐⭐⭐⭐⭐</span>
+                                        </a>
+                                        <button class="more-btn" onclick="showMore(this)">More</button>
+                                    </div>
+                            </div>
+
+                            <!-- Airbnb Review 2-->
+                            <div class="swiper-slide review-item">
+
+                                    <div class="review">
+                                        <a href="https://www.airbnb.de/rooms/1148296209711512058/reviews?source_impression_id=p3_1728228834_P3-pJ5qgT53oveL3&scroll_to_review=1186136127345937230"
+                                        target="_blank" class="review-link">
+                                        <h4>Esra (August 2024)</h4>
+                                        <p class="review-text">"Wir hatten die Unterkunftsbuchung für eine/n Mitarbeiter/in vorgenommen.
+                                            Über die Wohnung selbst, kann ich leider keine deutliche Aussage treffen, da
+                                            wir selbst nicht vor Ort waren. Alle notwendigen Buchungsinformationen
+                                            wurden uns nach der Buchung angegeben, sodass wir diese problemlos an
+                                            unsere/n Mitarbeiter/in weiterleiten konnten. Die Kommunikation vorab mit
+                                            dem Vermieter war stets freundlich und zielführend. Gerne buchen wir diese
+                                            Unterkunft bei Bedarf wieder!"</p>
+                                        <span>⭐⭐⭐⭐⭐</span>
+                                    </a>
+
+                                        <button class="more-btn" onclick="showMore(this)">More</button>
+                                    </div>
+                            </div>
+
+                            <!-- Google Review 2 -->
+                            <div class="swiper-slide review-item">
+
+                                    <div class="review">
+                                        <a href="https://www.airbnb.de/rooms/1148296209711512058/reviews?source_impression_id=p3_1728228834_P3-pJ5qgT53oveL3&scroll_to_review=1186136127345937230"
+                                        target="_blank" class="review-link">
+                                        <h4>Jonathan (Juni 2024)</h4>
+                                        <p class="review-text">"We had an excellent stay at Kristine’s place in the lovely town of Sulingen!
+                                            The place was perfectly laid out, with lots of room to make yourself feel at
+                                            home and on top of that a very convenient parking space right out front.
+                                            Highly recommended and will definitely stay again when heading back to
+                                            Sulingen."</p>
+                                        <span>⭐⭐⭐⭐⭐</span>
+                                    </a>
+
+                                    <button class="more-btn" onclick="showMore(this)">More</button>
+                                    </div>
+                            </div>
+
+                            <!-- Google Review 2 -->
+                            <div class="swiper-slide review-item">
+
+                                    <div class="review">
+                                        <a href="https://www.airbnb.de/rooms/1126584382753395692?source_impression_id=p3_1728228872_P3nMUIdUgLd6KjK7"
+                                        target="_blank" class="review-link">
+                                        <h4>Matthias (Juni 2024)</h4>
+                                        <p class="review-text">"Alles Top , sehr nette Gastgeberin!"</p>
+                                        <span>⭐⭐⭐⭐⭐</span>
+                                    </a>
+
+                                    <button class="more-btn" onclick="showMore(this)">More</button>
+                                    </div>
+                            </div>
+
+                            <!-- Google Review 2 -->
+                            <div class="swiper-slide review-item">
+
+                                    <div class="review">
+                                        <a href="https://www.airbnb.de/rooms/1142531347281050607/reviews?source_impression_id=p3_1728228916_P3LK0AW95JE51-W6&scroll_to_review=1160814439790145348"
+                                        target="_blank" class="review-link">
+                                        <h4>Claudia (Mai 2024)</h4>
+                                        <p class="review-text">"Kristine ist sehr herzlich und freundlich, wir haben uns sofort willkommen
+                                            gefühlt. Sie war jeder Zeit für uns erreichbar und hat für nicht ortskundige
+                                            gute Tipps auf Lager. Außerdem ist sie mit unseren Sonderwünschen ganz
+                                            entspannt und sehr flexibel umgegangen. Die Wohnung war super sauber, die
+                                            Einrichtung ist sehr liebevoll gestaltet und alle Räume sind großzügig. Das
+                                            Bad ist hochmodern. Am wunderbarsten fanden wir jedoch die drei Balkone, die
+                                            zum Verweilen einluden. Bei schlechtem Wetter ist in der Wohnung für alles
+                                            gesorgt. Es gibt zahlreiche Gesellschaftsspiele und alles an
+                                            Unterhaltungselektronik, was man sich nur wünschen kann. Die Wohnung ist
+                                            sehr ruhig und doch zentral gelegen. Wir haben unseren Aufenthalt rundum
+                                            genossen und kommen definitiv wieder!!!"</p>
+                                        <span>⭐⭐⭐⭐⭐</span>
+                                    </a>
+
+                                    <button class="more-btn" onclick="showMore(this)">More</button>
+                                    </div>
+
+                            </div>
+
+                            <div class="swiper-slide review-item">
+
+                                    <div class="review">
+                                        <a href="https://www.airbnb.de/rooms/1131067349074802839/reviews?source_impression_id=p3_1728228387_P3EY0u2obZPS7xc2&scroll_to_review=1249952501536303853"
+                                        target="_blank" class="review-link">
+                                        <h4>Sarino (Mai 2024)</h4>
+                                        <p class="review-text">"Supertolle Unterkunft, sehr sauber, traumhafte Sonnenterrasse. Das Beste
+                                            sind die Mega freundlichen Gastgeber."</p>
+                                        <span>⭐⭐⭐⭐⭐</span>
+                                    </a>
+
+                                    <button class="more-btn" onclick="showMore(this)">More</button>
+                                    </div>
+
+                            </div>
+
+                            <div class="swiper-slide review-item">
+
+                                    <div class="review">
+                                        <a href="https://www.airbnb.de/rooms/1131067349074802839/reviews?source_impression_id=p3_1728228387_P3EY0u2obZPS7xc2&scroll_to_review=1249952501536303853"
+                                        target="_blank" class="review-link">
+                                        <h4>Gabriel (Mai 2024)</h4>
+                                        <p class="review-text">"Wir sind froh und dankbar, die ersten Gäste von Kristine gewesen zu sein.
+                                            Die Unterkunft hat uns als kleine Familie mehr als beeindruckt. Angefangen
+                                            von dem verwöhnenden Badezimmer mit Regenwalddusche, über die voll
+                                            ausgestattete Küche, kostenfreier Zugang zu Netflix und Prime , ein
+                                            Schlafzimmer mit elektrischen Rollläden und Fußbodenheizung, bis hin zu
+                                            unschlagbaren Dachterrassen. Sulingen ist ein niedlicher kleiner Ort, mit
+                                            allem was man braucht. Danke für zwei für eure Gastfreundschaft und den
+                                            komplikationslosen Aufenthalt. Liebe Grüße und bis nächstes Jahr"</p>
+                                        <span>⭐⭐⭐⭐⭐</span>
+                                    </a>
+
+                                    <button class="more-btn" onclick="showMore(this)">More</button>
+                                    </div>
+                            </div>
+
+                            <!-- Add more reviews as needed -->
+                        </div>
+                        <!-- Add navigation buttons if needed -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Map -->
+        <div class="map">
+            <h2 data-i18n="location_header">Wegbeschreibung</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2418.9134967794575!2d8.805173057126288!3d52.67959985269883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b0b8d44001e995%3A0xd09d9ab56254cfc!2sSch%C3%BCtzenstra%C3%9Fe%2042%2C%2027232%20Sulingen!5e0!3m2!1sde!2sde!4v1716732143777!5m2!1sde!2sde"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
     </div>
 
 
-</div>
+    <!-- <!-- <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.13/index.global.min.js'></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <script>
+        // document.addEventListener('DOMContentLoaded', function () {
+        //     var calendarEl = document.getElementById('calendar');
+        //     console.log(calendarEl);
+        //
+        //     var calendar = new FullCalendar.Calendar(calendarEl, {
+        //         initialView: 'dayGridMonth',
+        //         aspectRatio: 6,
+        //         contentHeight: 500,
+        //         events: [
+        //
+        //             {
+        //                 title: 'Booked',
+        //                 start: '2024-05-01',
+        //                 end: '2024-05-12',
+        //                 color: '#39977c'
+        //             },
+        //             {
+        //                 title: 'Booked',
+        //                 start: '2024-05-31',
+        //                 end: '2024-06-01',
+        //                 color: '#39977c'
+        //             },
+        //             {
+        //                 title: 'Booked',
+        //                 start: '2024-06-21',
+        //                 end: '2024-06-30',
+        //                 color: '#39977c'
+        //             }
+        //         ]
+        //     });
+        //
+        //     calendar.render();
+        // });
+        //  var swiper = new Swiper('.swiper-container', {
+        //     slidesPerView: 4, // Show 4 reviews at a time
+        //     spaceBetween: 30, // Space between reviews
+        //     navigation: {
+        //         nextEl: '.swiper-button-next',
+        //         prevEl: '.swiper-button-prev',
+        //     },
+        //     loop: true, // Enable infinite scrolling
+        //     breakpoints: {
+        //         // When the window is <= 1024px
+        //         1024: {
+        //             slidesPerView: 3,
+        //         },
+        //         // When the window is <= 768px
+        //         768: {
+        //             slidesPerView: 2,
+        //         },
+        //         // When the window is <= 640px
+        //         640: {
+        //             slidesPerView: 1,
+        //         }
+        //     }
+        // });
 
-<script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.13/index.global.min.js'></script>
-<script>
-    // document.addEventListener('DOMContentLoaded', function () {
-    //     var calendarEl = document.getElementById('calendar');
-    //     console.log(calendarEl);
-    //
-    //     var calendar = new FullCalendar.Calendar(calendarEl, {
-    //         initialView: 'dayGridMonth',
-    //         aspectRatio: 6,
-    //         contentHeight: 500,
-    //         events: [
-    //
-    //             {
-    //                 title: 'Booked',
-    //                 start: '2024-05-01',
-    //                 end: '2024-05-12',
-    //                 color: '#39977c'
-    //             },
-    //             {
-    //                 title: 'Booked',
-    //                 start: '2024-05-31',
-    //                 end: '2024-06-01',
-    //                 color: '#39977c'
-    //             },
-    //             {
-    //                 title: 'Booked',
-    //                 start: '2024-06-21',
-    //                 end: '2024-06-30',
-    //                 color: '#39977c'
-    //             }
-    //         ]
-    //     });
-    //
-    //     calendar.render();
-    // });
+    </script>
 
-
-</script>
-<script src="js/lightbox/lightbox-plus-jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"
+    <script src="js/lightbox/lightbox-plus-jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"
         integrity="sha256-gbqsBwBVZ0bNBUY4I5rT6yRhMbB9roODov0c8qE4iNE=" crossorigin="anonymous"></script>
-<script src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/languages.js"></script>
+
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>
